@@ -14,7 +14,8 @@ import Model.Developer;
 public class DeveloperDAO {
 	
 	private String sep = System.getProperty("file.separator");
-	private File file = new File("E:" + sep + "jv" + sep + "Devel" + sep + "Developers.dat");
+	private String user = System.getProperty("user.dir");
+	private File file = new File(user + sep + "Developers.dat");
 	private TreeSet<Developer> developers;
 	
 	public DeveloperDAO() {
