@@ -1,15 +1,12 @@
 package DAO;
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.TreeSet;
 
-import Model.Developer;
+import model.Developer;
 
 public class DeveloperDAO {
 	
@@ -55,7 +52,7 @@ public class DeveloperDAO {
 			developer.setLastName(developerDim[2]);
 			developer.setSpecialty(developerDim[3]);
 			developer.setExperience(Integer.parseInt(developerDim[4]));
-			developer.setSalary(Integer.parseInt(developerDim[5].trim()));
+			developer.setSalary(Integer.parseInt(developerDim[5]));
 			developers.add(developer);
 			developerStr = "";
 		}
